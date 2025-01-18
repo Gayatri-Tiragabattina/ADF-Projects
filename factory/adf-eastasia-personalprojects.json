@@ -1,0 +1,9 @@
+{
+	"name": "adf-eastasia-personalprojects",
+	"location": "eastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4ccd4ad5-b2dc-4511-8a58-144c147544d5",
+		"tenantId": "66295c67-f9e8-4bd0-ac32-7eb477312e44"
+	}
+}
