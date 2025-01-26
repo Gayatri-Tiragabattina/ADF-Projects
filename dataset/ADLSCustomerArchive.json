@@ -1,0 +1,23 @@
+{
+	"name": "ADLSCustomerArchive",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLSAirbnb",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "customer-archive",
+				"fileSystem": "airbnb-project"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
