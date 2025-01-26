@@ -1,0 +1,10 @@
+{
+	"name": "ADLSAirbnb",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlsstoragefintech2.dfs.core.windows.net/"
+		}
+	}
+}
