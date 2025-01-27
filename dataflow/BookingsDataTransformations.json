@@ -14,7 +14,7 @@
 				},
 				{
 					"dataset": {
-						"referenceName": "SynapseBookingData",
+						"referenceName": "SynapseBookingfact",
 						"type": "DatasetReference"
 					},
 					"name": "SynapseBookingData"
@@ -91,9 +91,10 @@
 				"          check_in_date = check_in_date,",
 				"          property_id = property_id,",
 				"          amount = amount) ~> DerivedColumn",
-				"DerivedColumn, SynapseBookingData lookup(ERROR_FUNCTION('') == ERROR_FUNCTION(''),",
+				"DerivedColumn, SynapseBookingData lookup(DerivedColumn@booking_id == SynapseBookingData@booking_id,",
 				"     multiple: false,",
-				"     pickup: 'any',",
+				"     pickup: 'first',",
+				"     desc(SynapseBookingData@timestamp, true),",
 				"     broadcast: 'auto')~> lookupSynapse"
 			]
 		}
