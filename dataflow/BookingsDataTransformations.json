@@ -1,0 +1,33 @@
+{
+	"name": "BookingsDataTransformations",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "CosmosBookingData",
+						"type": "DatasetReference"
+					},
+					"name": "BookingData",
+					"description": "Import data from cosmos db"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "DataQualityCheck"
+				}
+			],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     enableChangeFeed: true,",
+				"     changeFeedStartFromTheBeginning: false,",
+				"     format: 'document') ~> BookingData",
+				"BookingData split(ERROR_FUNCTION(''),",
+				"     disjoint: false) ~> DataQualityCheck@(BadRecords, AcceptedRecords)"
+			]
+		}
+	}
+}
