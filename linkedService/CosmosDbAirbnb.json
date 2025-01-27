@@ -5,8 +5,8 @@
 		"annotations": [],
 		"type": "CosmosDb",
 		"typeProperties": {
-			"connectionString": "AccountEndpoint=https://airbnb-project.documents.azure.com:443/;Database=AirBNB;",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDRERjRBOEJFLUY3MDYtNDE1MS1CNjNBLUVFMkNFQTA3RjBGRF9kYmJlYTFlZS03OTIwLTQwODMtYmI5NC1lOTU0ZTY1ZDZhYTMiDQp9"
+			"connectionString": "AccountEndpoint=https://airbnb-project.documents.azure.com:443/;Database=AirBnB;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDRERjRBOEJFLUY3MDYtNDE1MS1CNjNBLUVFMkNFQTA3RjBGRF8wZDdjZGU1MC00N2I0LTRlZmMtOWRjZC1mOTdlOGM5YzFhMTEiDQp9"
 		}
 	}
 }
